@@ -1,0 +1,535 @@
+* {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+  color: rgb(163 152 152);
+}
+html {
+  scroll-behavior: smooth;
+}
+.drop_down {
+  position: absolute;
+  width: 100%;
+  margin-left: -40px;
+  padding: 0px 40px;
+  display: none;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  z-index: 10;
+}
+.drop_down li {
+  list-style: none;
+  padding: 15px 0px;
+}
+.drop_down-ele:hover .drop_down {
+  background-color: whitesmoke;
+  display: block;
+}
+.navbar {
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+.logo {
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 76vw;
+  align-items: center;
+}
+.elements {
+  color: rgb(163 152 152);
+  font-family: "Ubuntu", sans-serif;
+  list-style: none;
+  margin: 0px 10px;
+  cursor: pointer;
+  position: relative;
+}
+.elements:hover {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+.elements::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #ff450cb6;
+  left: 0px;
+  bottom: -6px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.elements:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff460ced;
+  border-radius: 45px;
+  height: 40px;
+  padding: 13px;
+  font-weight: 900;
+  color: white;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+.btn:hover {
+  background-color: #ff450cb6;
+}
+.line {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0px;
+  width: 31px;
+}
+.hamburger {
+  height: 25px;
+  margin-right: 70px;
+  display: none;
+  cursor: pointer;
+}
+.home {
+  width: 100vw;
+  background-color: #cccaca;
+  height: 90vh;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.adjust {
+  display: flex;
+  flex-direction: column;
+  margin-right: 170px;
+}
+.home1 {
+  font-size: 55px;
+  width: 380px;
+  display: inline-block;
+  margin: 0px 50px;
+}
+.home2 {
+  width: 500px;
+  margin: 0px 50px;
+}
+.home-para {
+  font-family: "Caveat", cursive;
+}
+.btn1 {
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff460ced;
+  border-radius: 45px;
+  height: 40px;
+  padding: 13px;
+  font-weight: 900;
+  width: 150px;
+  margin: 30px 50px;
+  transition-property: box-shadow;
+  transition-duration: 0.5s;
+}
+.btn1:hover {
+  box-shadow: 4px 4px 25px #ff460ced;
+}
+.home-img {
+  margin-right: 120px;
+  width: 500px;
+}
+.about {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.large_cards {
+  background-color: #cccaca;
+  height: 370px;
+  width: 320px;
+  margin: 37px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 4px 4px 60px #9b9595;
+  transition: transform 0.3s;
+}
+.large_cards:hover {
+  transform: scale(1.1);
+}
+.cards {
+  background-color: #cccaca;
+  height: 330px;
+  width: 270px;
+  margin: 37px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 4px 4px 40px #9b9595;
+  transition: all 0.4s;
+}
+.cards:hover {
+  transform: scale(1.1);
+}
+.about_heading {
+  padding-bottom: 25px;
+  text-align: center;
+}
+.cards_img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 25px;
+  margin-top: -35px;
+}
+.cards_para {
+  text-align: center;
+}
+
+.menu {
+  background-color: #cccaca;
+  width: 100vw;
+}
+.menu_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu_heading {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 35px;
+  font-family: "Caveat", cursive;
+}
+.menu_item {
+  width: 270px;
+  height: 270px;
+  margin-bottom: 30px;
+}
+.card1 {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.prof_chef {
+  width: 100vw;
+}
+.chef_heading {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  font-family: "Caveat", cursive;
+}
+.chef_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chefs {
+  background-color: #cccaca;
+  margin: 20px;
+  width: 431px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 4px 60px #9b9595;
+  transition: all 0.3s;
+}
+.chefs:hover {
+  transform: scale(1.07);
+}
+.chef_names {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.chef_pic {
+  height: 420px;
+  width: 431px;
+}
+.chef_para {
+  padding: 5px 34px;
+  text-align: center;
+}
+.gallery_heading {
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Caveat", cursive;
+  font-size: 35px;
+}
+.gallery {
+  background-color: #9b9595;
+  margin-top: 80px;
+}
+.slider-frame {
+  overflow: hidden;
+  height: 630px;
+  width: 1130px;
+  margin-left: 330px;
+  padding-top: 60px;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+@keyframes slide_animation {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  20% {
+    left: 1200px;
+  }
+  30% {
+    left: 1200px;
+  }
+  40% {
+    left: 2400px;
+  }
+  50% {
+    left: 2400px;
+  }
+  60% {
+    left: 1200px;
+  }
+  70% {
+    left: 1200px;
+  }
+  80% {
+    left: 0px;
+  }
+  90% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.slide-images {
+  width: 3600px;
+  height: 800px;
+  margin: 0 0 0 -2400px;
+  position: relative;
+  animation-name: slide_animation;
+  animation-duration: 33s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+.img-container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+}
+.tag {
+  text-align: center;
+  padding-bottom: 40px;
+  font-family: "Caveat", cursive;
+  font-size: 45px;
+}
+.foot {
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.footer_heading {
+  color: white;
+  text-align: center;
+}
+.footer_para {
+  color: white;
+  text-align: center;
+}
+.foot_img {
+  filter: brightness(0) invert(1);
+  height: 50px;
+}
+hr {
+  background-color: white;
+}
+.copy_right {
+  background-color: rgb(33, 33, 33);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1439px) {
+  .gallery {
+    display: none;
+  }
+}
+@media screen and (max-width: 1410px) {
+  .hamburger {
+    display: block;
+  }
+  .list {
+    height: 57vh;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 1s ease-out;
+    /* display: none; */
+  }
+  .navbar {
+    height: 60vh;
+    align-items: flex-start;
+    padding-top: 20px;
+    transition: all 0.7s ease-out;
+  }
+  .v-resp {
+    height: 55px;
+  }
+  .h-resp {
+    opacity: 0;
+  }
+  .chef_list {
+    flex-wrap: wrap;
+  }
+  .home2 {
+    text-align: center;
+    width: auto;
+  }
+  .about {
+    height: auto;
+  }
+  .adjust {
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .menu {
+    width: auto;
+  }
+  .menu_list {
+    justify-content: center;
+  }
+  .home {
+    height: auto;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .home-img {
+    margin-right: 0;
+  }
+  .about {
+    flex-wrap: wrap;
+  }
+  .large_cards {
+    height: 330px;
+    width: 270px;
+  }
+  .home-para {
+    text-align: center;
+  }
+  .btn {
+    margin-right: 40px;
+    width: 141px;
+    margin-top: -4px;
+  }
+  .home-img {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-img {
+    width: 280px;
+  }
+  .foot {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 560px) {
+  .home-img {
+    width: 200px;
+  }
+}
+
+/* contact page */
+
+
+.contact_form{
+    width: 100vw;
+    height: 90vh;
+    background-color: #cccaca;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    /* justify-content: center; */
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_element{
+    width: 50vw;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+.btn-contact{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff460ced;
+    border-radius: 45px;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 900;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+  }
+  .btn-contact:hover {
+    background-color: #ff450cb6;
+  }
